@@ -1,4 +1,4 @@
-# bookLibrarySpa 📚
+# Book Linrary SPA 📚
 
 A modern, high-performance Single Page Application (SPA) for book lovers. This project demonstrates advanced JavaScript techniques including custom routing, persistent storage, and dynamic UI rendering.
 
