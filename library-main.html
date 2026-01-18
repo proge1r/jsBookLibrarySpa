@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library SPA</title>
+    <link rel="stylesheet" href="library-styles.css">
+</head>
+<body>
+
+<header class="app-header">
+    <div class="header-top">
+        <div class="logo" onclick="navigate('/books')" style="cursor:pointer">OpenLibrary</div>
+        
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="book-search" placeholder="Search by title or author..." autocomplete="off">
+        </div>
+
+        <button id="theme-switcher" class="theme-toggle-pill">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+            <div class="pill-circle"></div>
+        </button>
+    </div>
+
+    <nav class="main-nav">
+        <a href="/books" data-link>Catalog</a>
+        <a href="/my-books" data-link>My Collection (<span id="count-badge">0</span>)</a>
+    </nav>
+</header>
+
+<main id="app-viewport" class="content-grid">
+    </main>
+
+<script src="library-core.js"></script>
+</body>
+</html>
